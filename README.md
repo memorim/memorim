@@ -1,15 +1,6 @@
-<!--
-PROFILE README FOR: https://github.com/memorim
-
-Visual rule:
-- no AI-generated artwork
-- anime visuals below are stills from the original Death Note anime
-- keep this repository public and named exactly: memorim
--->
-
 <p align="center">
   <a href="https://tv.apple.com/us/show/death-note/umc.cmc.5gedggwjieh0svzbxfsfvhiu1">
-    <img src="./6d95b343-b41b-41cb-baf3-a69f5f078f0b.png" width="100%" alt="L — Death Note anime still"/>
+    <img src="./l-death-note.png" width="100%" alt="L — Death Note anime still"/>
   </a>
 </p>
 
