@@ -57,10 +57,10 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 
 ## `03 // ENGINEERING`
 
-<table>
+<table width="100%">
 <tr>
 
-<td width="25%" valign="top">
+<td width="33%" valign="top">
 
 ### `BACKEND`
 
@@ -71,17 +71,18 @@ service integrations
 
 </td>
 
-<td width="25%" valign="top">
+<td width="33%" valign="top">
 
 ### `WEB`
 
 responsive interfaces  
 frontend logic  
-client-server interaction
+client-server interaction  
+component-based UI
 
 </td>
 
-<td width="25%" valign="top">
+<td width="33%" valign="top">
 
 ### `DATA`
 
@@ -92,7 +93,11 @@ persistent storage
 
 </td>
 
-<td width="25%" valign="top">
+</tr>
+
+<tr>
+
+<td width="33%" valign="top">
 
 ### `AUTOMATION`
 
@@ -100,6 +105,28 @@ browser automation
 scripted workflows  
 system integrations  
 tooling
+
+</td>
+
+<td width="33%" valign="top">
+
+### `MOBILE`
+
+cross-platform apps  
+application interfaces  
+client-side logic  
+API integration
+
+</td>
+
+<td width="33%" valign="top">
+
+### `SYSTEMS`
+
+Docker environments  
+Linux workflows  
+version control  
+development tooling
 
 </td>
 
