@@ -97,15 +97,8 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 ### `FINAL NOTE`
 
 ```text
-truth > assumption
-evidence > noise
-consistency > speed
+works on my machineю
 ```
-
-<sub>
-Death Note anime imagery belongs to its respective rights holders.
-This profile README uses linked stills from the original anime; no AI-generated character artwork is included.
-</sub>
 
 </td>
 </tr>
