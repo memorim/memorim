@@ -11,16 +11,15 @@
 <td width="58%" valign="top">
 
 ```text
-alias        memorim
 status       active
 focus        backend / full-stack / automation
 languages    Python · TypeScript · JavaScript · HTML · Dart
-method       observe → isolate → test → conclude
+approach        design → build → test → improve
 ```
 
-I build practical software around APIs, automation, monitoring, data and web interfaces.
+I build backend and full-stack applications.
 
-Every repository is treated like a case: identify the problem, reduce uncertainty, ship the evidence.
+My priorities are clear architecture, maintainable code, predictable behavior and practical solutions to real problems.
 
 </td>
 <td width="42%" valign="top">
