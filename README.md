@@ -65,7 +65,7 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 ### `BACKEND`
 
 REST APIs  
-validation  
+request validation  
 application logic  
 service integrations
 
@@ -77,7 +77,7 @@ service integrations
 
 responsive interfaces  
 frontend logic  
-client-server interaction  
+client-server flow  
 component-based UI
 
 </td>
@@ -88,7 +88,7 @@ component-based UI
 
 SQL databases  
 schema design  
-querying  
+data querying  
 persistent storage
 
 </td>
@@ -104,7 +104,7 @@ persistent storage
 browser automation  
 scripted workflows  
 system integrations  
-tooling
+development tooling
 
 </td>
 
