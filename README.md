@@ -33,34 +33,15 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 
 ## `02 // ACTIVITY`
 
-<table>
-<tr>
-<td width="37%" valign="top">
-  <a href="https://abrakadabra.fun/5901-jel-tetrad-smerti-skrinshoty.html">
-    <img src="https://abrakadabra.fun/uploads/posts/2021-12/1639926673_3-abrakadabra-fun-p-el-tetrad-smerti-skrinshoti-3.png" width="100%" alt="L with tea — Death Note anime"/>
-  </a>
-</td>
-<td width="63%" valign="top">
+<p>
+  <img src="https://skillicons.dev/icons?i=python,ts,js,html,css,dart,fastapi,django,nodejs,express,react,postgres,sqlite,docker,git,linux,flutter&perline=17" alt="Core skills"/>
+</p>
 
-### recent cases
-
-- [`django-blog-api-test-task`](https://github.com/memorim/django-blog-api-test-task) — Django / Django Ninja / PostgreSQL / Docker
-- [`approval-service`](https://github.com/memorim/approval-service) — Python service
-- [`lumenwatch-agent`](https://github.com/memorim/lumenwatch-agent) — website-change intelligence with FastAPI, browser automation, SQLite and MCP
-- [`quorum-git-agent`](https://github.com/memorim/quorum-git-agent) — GitHub repository intelligence with FastAPI, SQLite and MCP
-
-### current signals
-
-```text
-backend        ██████████  active
-automation     ████████░░  active
-full-stack     ███████░░░  active
-monitoring     ██████░░░░  active
-```
-
-</td>
-</tr>
-</table>
+- **languages:** Python · TypeScript · JavaScript · HTML · CSS · Dart
+- **backend:** FastAPI · Django · Node.js · Express · REST APIs
+- **frontend:** React · HTML · CSS
+- **data:** PostgreSQL · SQLite
+- **systems & tools:** Docker · Git · Linux · browser automation · MCP · Flutter
 
 ---
 
