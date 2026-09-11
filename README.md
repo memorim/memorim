@@ -60,98 +60,32 @@ Every repository is treated like a case: identify the problem, reduce uncertaint
 
 ---
 
-## `02 // ACTIVITY LOG`
-
-<!--
-Live GitHub data only:
-- top line graph: github-readme-activity-graph
-- contribution calendar: ghchart
-- project cards: github-readme-stats
--->
-
-<p align="center">
-  <a href="https://github.com/memorim">
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=memorim&bg_color=0b0d10&color=7d8590&title_color=c9d1d9&line=8b949e&point=e6edf3&area=true&area_color=30363d&hide_border=true&grid=true&radius=0&height=200&days=31&custom_title=ACTIVITY%20%2F%2F%20LAST%2031%20DAYS"
-      width="100%"
-      alt="memorim activity graph"
-    />
-  </a>
-</p>
+## `02 // ACTIVITY`
 
 <table>
 <tr>
-<td width="64%" valign="top">
+<td width="37%" valign="top">
+  <a href="https://abrakadabra.fun/5901-jel-tetrad-smerti-skrinshoty.html">
+    <img src="https://abrakadabra.fun/uploads/posts/2021-12/1639926673_3-abrakadabra-fun-p-el-tetrad-smerti-skrinshoti-3.png" width="100%" alt="L with tea — Death Note anime"/>
+  </a>
+</td>
+<td width="63%" valign="top">
 
-### `CONTRIBUTION RECORD`
+### recent cases
 
-<a href="https://github.com/memorim">
-  <img
-    src="https://ghchart.xqsit94.in/dark:8b949e/memorim"
-    width="100%"
-    alt="memorim GitHub contribution calendar"
-  />
-</a>
+- [`django-blog-api-test-task`](https://github.com/memorim/django-blog-api-test-task) — Django / Django Ninja / PostgreSQL / Docker
+- [`approval-service`](https://github.com/memorim/approval-service) — Python service
+- [`lumenwatch-agent`](https://github.com/memorim/lumenwatch-agent) — website-change intelligence with FastAPI, browser automation, SQLite and MCP
+- [`quorum-git-agent`](https://github.com/memorim/quorum-git-agent) — GitHub repository intelligence with FastAPI, SQLite and MCP
 
-<br>
-
-<a href="https://github.com/memorim">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=memorim&show_icons=true&hide_border=true&bg_color=0b0d10&title_color=c9d1d9&text_color=7d8590&icon_color=8b949e&ring_color=8b949e&include_all_commits=true&custom_title=CASE%20STATISTICS"
-    width="100%"
-    alt="memorim GitHub statistics"
-  />
-</a>
+### current signals
 
 ```text
-STATUS       observing...
-SIGNAL       contributions detected
-METHOD       evidence > assumption
+backend        ██████████  active
+automation     ████████░░  active
+full-stack     ███████░░░  active
+monitoring     ██████░░░░  active
 ```
-
-</td>
-
-<td width="36%" valign="top">
-
-### `CASE FILES // PINNED`
-
-<a href="https://github.com/memorim/lumenwatch-agent">
-  <img
-    src="https://github-readme-stats.vercel.app/api/pin/?username=memorim&repo=lumenwatch-agent&hide_border=false&border_color=30363d&bg_color=0b0d10&title_color=e6edf3&text_color=7d8590&icon_color=8b949e&show_owner=false&description_lines_count=2"
-    width="100%"
-    alt="lumenwatch-agent"
-  />
-</a>
-
-<br>
-
-<a href="https://github.com/memorim/quorum-git-agent">
-  <img
-    src="https://github-readme-stats.vercel.app/api/pin/?username=memorim&repo=quorum-git-agent&hide_border=false&border_color=30363d&bg_color=0b0d10&title_color=e6edf3&text_color=7d8590&icon_color=8b949e&show_owner=false&description_lines_count=2"
-    width="100%"
-    alt="quorum-git-agent"
-  />
-</a>
-
-<br>
-
-<a href="https://github.com/memorim/flowboard">
-  <img
-    src="https://github-readme-stats.vercel.app/api/pin/?username=memorim&repo=flowboard&hide_border=false&border_color=30363d&bg_color=0b0d10&title_color=e6edf3&text_color=7d8590&icon_color=8b949e&show_owner=false&description_lines_count=2"
-    width="100%"
-    alt="flowboard"
-  />
-</a>
-
-<br>
-
-<a href="https://github.com/memorim/seatly">
-  <img
-    src="https://github-readme-stats.vercel.app/api/pin/?username=memorim&repo=seatly&hide_border=false&border_color=30363d&bg_color=0b0d10&title_color=e6edf3&text_color=7d8590&icon_color=8b949e&show_owner=false&description_lines_count=2"
-    width="100%"
-    alt="seatly"
-  />
-</a>
 
 </td>
 </tr>
