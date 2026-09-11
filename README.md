@@ -55,16 +55,56 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 
 ---
 
-## `03 // ACTIVE CASES`
+## `03 // ENGINEERING`
 
-| case | evidence | state |
-|---|---|---|
-| [`flowboard`](https://github.com/memorim/flowboard) | React · Express · SQLite · TypeScript | `ACTIVE` |
-| [`seatly`](https://github.com/memorim/seatly) | booking · availability · conflict protection | `ACTIVE` |
-| [`afterglow-capsule`](https://github.com/memorim/afterglow-capsule) | AES-256-GCM · server-side unlock dates | `ARCHIVED` |
-| [`echomap`](https://github.com/memorim/echomap) | Web Audio · Express · SQLite | `ARCHIVED` |
-| [`pulsewatch`](https://github.com/memorim/pulsewatch) | uptime · incidents · REST API | `MONITORING` |
-| [`fullstack-portfolio`](https://github.com/memorim/fullstack-portfolio) | full-stack / web project showcase | `INDEX` |
+<table>
+<tr>
+
+<td width="25%" valign="top">
+
+### `BACKEND`
+
+REST APIs  
+validation  
+application logic  
+service integrations
+
+</td>
+
+<td width="25%" valign="top">
+
+### `WEB`
+
+responsive interfaces  
+frontend logic  
+client-server interaction
+
+</td>
+
+<td width="25%" valign="top">
+
+### `DATA`
+
+SQL databases  
+schema design  
+querying  
+persistent storage
+
+</td>
+
+<td width="25%" valign="top">
+
+### `AUTOMATION`
+
+browser automation  
+scripted workflows  
+system integrations  
+tooling
+
+</td>
+
+</tr>
+</table>
 
 ---
 
