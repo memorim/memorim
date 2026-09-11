@@ -31,7 +31,7 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 
 ---
 
-## `02 // ACTIVITY`
+## `02 // CORE SKILLS`
 
 <table>
 <tr>
@@ -66,22 +66,9 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 | [`pulsewatch`](https://github.com/memorim/pulsewatch) | uptime · incidents · REST API | `MONITORING` |
 | [`fullstack-portfolio`](https://github.com/memorim/fullstack-portfolio) | full-stack / web project showcase | `INDEX` |
 
-
 ---
 
-## `04 // TOOLKIT`
-
-```text
-BACKEND     Python / FastAPI / Django / Express
-FRONTEND    TypeScript / JavaScript / React / HTML / CSS
-DATA        SQLite / PostgreSQL
-SYSTEMS     Docker / browser automation / REST / MCP
-OTHER       Dart / Flutter
-```
-
----
-
-## `05 // ARCHIVE`
+## `04 // ARCHIVE`
 
 <details>
 <summary><b>open archive</b></summary>
