@@ -77,33 +77,10 @@ monitoring     ██████░░░░  active
 | [`pulsewatch`](https://github.com/memorim/pulsewatch) | uptime · incidents · REST API | `MONITORING` |
 | [`fullstack-portfolio`](https://github.com/memorim/fullstack-portfolio) | full-stack / web project showcase | `INDEX` |
 
----
-
-## `04 // EVIDENCE BOARD`
-
-<table>
-<tr>
-<td width="33%" align="center">
-  <a href="https://abrakadabra.fun/5901-jel-tetrad-smerti-skrinshoty.html">
-    <img src="https://abrakadabra.fun/uploads/posts/2021-12/1639926714_12-abrakadabra-fun-p-el-tetrad-smerti-skrinshoti-12.jpg" width="100%" alt="L crouched — Death Note anime"/>
-  </a>
-</td>
-<td width="33%" align="center">
-  <a href="https://abrakadabra.fun/5901-jel-tetrad-smerti-skrinshoty.html">
-    <img src="https://abrakadabra.fun/uploads/posts/2021-12/1639926625_2-abrakadabra-fun-p-el-tetrad-smerti-skrinshoti-2.jpg" width="100%" alt="L on the phone — Death Note anime"/>
-  </a>
-</td>
-<td width="33%" align="center">
-  <a href="https://tv.apple.com/au/episode/ally/umc.cmc.2nkozvdp2inqomqsn0t1b022n?showId=umc.cmc.5gedggwjieh0svzbxfsfvhiu1">
-    <img src="https://is1-ssl.mzstatic.com/image/thumb/snACYGVS6OADfTEjbeJ8rA/1200x675.jpg" width="100%" alt="L at computer — Death Note anime"/>
-  </a>
-</td>
-</tr>
-</table>
 
 ---
 
-## `05 // TOOLKIT`
+## `04 // TOOLKIT`
 
 ```text
 BACKEND     Python / FastAPI / Django / Express
@@ -115,7 +92,7 @@ OTHER       Dart / Flutter
 
 ---
 
-## `06 // ARCHIVE`
+## `05 // ARCHIVE`
 
 <details>
 <summary><b>open archive</b></summary>
