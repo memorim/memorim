@@ -33,15 +33,25 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 
 ## `02 // ACTIVITY`
 
+<table>
+<tr>
+<td width="100%" valign="top">
+
 <p>
   <img src="https://skillicons.dev/icons?i=python,ts,js,html,css,dart,fastapi,django,nodejs,express,react,postgres,sqlite,docker,git,linux,flutter&perline=17" alt="Core skills"/>
 </p>
 
-- **languages:** Python · TypeScript · JavaScript · HTML · CSS · Dart
-- **backend:** FastAPI · Django · Node.js · Express · REST APIs
-- **frontend:** React · HTML · CSS
-- **data:** PostgreSQL · SQLite
-- **systems & tools:** Docker · Git · Linux · browser automation · MCP · Flutter
+<ul>
+  <li><b>languages:</b> Python · TypeScript · JavaScript · HTML · CSS · Dart</li>
+  <li><b>backend:</b> FastAPI · Django · Node.js · Express · REST APIs</li>
+  <li><b>frontend:</b> React · HTML · CSS</li>
+  <li><b>data:</b> PostgreSQL · SQLite</li>
+  <li><b>systems & tools:</b> Docker · Git · Linux · browser automation · MCP · Flutter</li>
+</ul>
+
+</td>
+</tr>
+</table>
 
 ---
 
