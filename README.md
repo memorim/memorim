@@ -8,7 +8,7 @@ Visual rule:
 -->
 
 <p align="center">
-  <a href="https://tv.apple.com/us/show/death-note/umc.cmc.5gedggwjieh0svzbxfsfvhiu1">
+  <a href="[https://tv.apple.com/us/show/death-note/umc.cmc.5gedggwjieh0svzbxfsfvhiu1](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSymbbgD5J0zU-fT9F9sYno9X9TVJbX4OE3_JPFTLf_DvZs2VY6rJzeZl7u&s=10)">
     <img src="https://is1-ssl.mzstatic.com/image/thumb/snACYGVS6OADfTEjbeJ8rA/1200x675.jpg" width="100%" alt="L — Death Note anime still"/>
   </a>
 </p>
