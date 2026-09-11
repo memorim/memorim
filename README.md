@@ -11,7 +11,6 @@
 <td width="58%" valign="top">
 
 ```text
-status       active
 focus        backend / full-stack / automation
 languages    Python · TypeScript · JavaScript · HTML · Dart
 approach     design → build → test → improve
