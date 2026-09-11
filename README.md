@@ -135,23 +135,6 @@ development tooling
 
 ---
 
-## `04 // ARCHIVE`
-
-<details>
-<summary><b>open archive</b></summary>
-<br>
-
-- [`roastory`](https://github.com/memorim/roastory) — specialty coffee store
-- [`ledgerly`](https://github.com/memorim/ledgerly) — invoices and cash-flow dashboard
-- [`nestly`](https://github.com/memorim/nestly) — apartment rental platform
-- [`morrow-studio`](https://github.com/memorim/morrow-studio) — editorial studio website
-- [`flutter`](https://github.com/memorim/flutter) — Dart / Flutter work
-- [`1c`](https://github.com/memorim/1c) — 1C work
-
-</details>
-
----
-
 <table>
 <tr>
 <td width="40%" valign="middle">
