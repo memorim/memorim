@@ -12,8 +12,8 @@
 
 ```text
 focus        backend / full-stack / automation
-languages    Python · TypeScript · JavaScript · HTML · Dart
-approach     design → build → test → improve
+scope        application · data · infrastructure
+approach     design → implement → test → maintain
 ```
 
 I build backend and full-stack applications.
