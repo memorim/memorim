@@ -57,39 +57,50 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 
 ## `03 // ENGINEERING`
 
-<table width="100%">
+<table align="center">
 <tr>
 
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 ### `BACKEND`
 
 REST APIs  
 request validation  
 application logic  
-service integrations
+service layer
 
 </td>
 
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 ### `WEB`
 
 responsive interfaces  
+component-based UI  
 frontend logic  
-client-server flow  
-component-based UI
+API interaction
 
 </td>
 
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 ### `DATA`
 
-SQL databases  
+PostgreSQL · SQLite  
 schema design  
 data querying  
-persistent storage
+persistence
+
+</td>
+
+<td width="25%" valign="top">
+
+### `AUTOMATION`
+
+browser automation  
+scripted workflows  
+system integrations  
+MCP tooling
 
 </td>
 
@@ -97,36 +108,47 @@ persistent storage
 
 <tr>
 
-<td width="33%" valign="top">
-
-### `AUTOMATION`
-
-browser automation  
-scripted workflows  
-system integrations  
-development tooling
-
-</td>
-
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 ### `MOBILE`
 
-cross-platform apps  
-application interfaces  
+Flutter apps  
+cross-platform UI  
 client-side logic  
 API integration
 
 </td>
 
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 ### `SYSTEMS`
 
 Docker environments  
 Linux workflows  
+service runtime  
+local environments
+
+</td>
+
+<td width="25%" valign="top">
+
+### `INTEGRATIONS`
+
+REST communication  
+external services  
+client-server flow  
+system connections
+
+</td>
+
+<td width="25%" valign="top">
+
+### `WORKFLOW`
+
+Git  
 version control  
-development tooling
+development tooling  
+project workflow
 
 </td>
 
