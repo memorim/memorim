@@ -97,7 +97,9 @@ My priorities are clear architecture, maintainable code, predictable behavior an
 ### `FINAL NOTE`
 
 ```text
-works on my machineю
+ㅤ
+works on my machine.
+ㅤ
 ```
 
 </td>
