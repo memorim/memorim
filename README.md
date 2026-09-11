@@ -4,24 +4,6 @@
   </a>
 </p>
 
-<h1 align="center">memorim</h1>
-
-<p align="center">
-  <code>L // CASE FILE</code>
-  &nbsp;·&nbsp;
-  <code>observe</code>
-  &nbsp;·&nbsp;
-  <code>analyze</code>
-  &nbsp;·&nbsp;
-  <code>deduce</code>
-</p>
-
-<p align="center">
-  <sub>mono no aware — software, systems, quiet investigation.</sub>
-</p>
-
----
-
 ## `01 // SUBJECT`
 
 <table>
