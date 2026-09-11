@@ -14,7 +14,7 @@
 status       active
 focus        backend / full-stack / automation
 languages    Python · TypeScript · JavaScript · HTML · Dart
-approach        design → build → test → improve
+approach     design → build → test → improve
 ```
 
 I build backend and full-stack applications.
