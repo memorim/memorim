@@ -1,22 +1,181 @@
-# Roman Kabanov — Backend / Full-stack Developer
+<p align="center">
+  <a href="https://tv.apple.com/us/show/death-note/umc.cmc.5gedggwjieh0svzbxfsfvhiu1">
+    <img src="./l-death-note.png" width="100%" alt="L — Death Note anime still"/>
+  </a>
+</p>
 
-I build web applications with server-side business rules, SQL persistence and tests for failure and concurrency scenarios.
+## `01 // PROFILE`
 
-My main stack is **TypeScript/JavaScript, Node.js/Express, React and SQL**. I also use Python with FastAPI and Django in the API and automation projects below.
+<table>
+<tr>
+<td width="58%" valign="top">
 
-## Selected engineering projects
+```text
+focus        backend / full-stack / automation
+scope        application · data · infrastructure
+approach     design → implement → test → maintain
+```
 
-| Project | What to inspect | Links |
-|---|---|---|
-| **Seatly — Workspace Booking** | Server pricing, SQLite overlap triggers, expiring holds and independent-connection concurrency tests | [Source](https://github.com/memorim/seatly-workspace-booking) · [Sandbox](https://memorim-flowboard-live.amusedcorgi34.chatgpt.site/seatly/index.html) |
-| **Flowboard — Project Manager** | Workspace permissions, conditional version updates, HTTP 409 handling, task history and restoration | [Source](https://github.com/memorim/flowboard-project-manager) · [Sandbox](https://memorim-flowboard-live.amusedcorgi34.chatgpt.site) |
-| **Pulsewatch — Service Monitor** | Scheduled HTTP checks, DNS-pinned requests, bounded concurrency and transactional incident history | [Source and local run](https://github.com/memorim/pulsewatch-service-monitor) |
-| **Content Approval API** | Conditional review decisions, retry validation and a leased transactional outbox | [Source and API example](https://github.com/memorim/content-approval-api) |
+I build backend and full-stack applications.
 
-The sandboxes are separate deployments; each repository explains its local and hosted boundaries. Setup, tests, data migrations and remaining limits are documented alongside the code.
+My priorities are clear architecture, maintainable code, predictable behavior and practical solutions to real problems.
 
-## Additional work
+</td>
+<td width="42%" valign="top">
+  <a href="https://www.imdb.com/title/tt0919370/">
+    <img src="https://m.media-amazon.com/images/M/MV5BM2MzYzg4ODYtZGUwOS00MjhkLTk5YmQtZjMxMTE2ZmM1YThmXkEyXkFqcGc%40._V1_.jpg" width="100%" alt="L close-up — Death Note anime"/>
+  </a>
+</td>
+</tr>
+</table>
 
-[Django Blog API](https://github.com/memorim/django-blog-api) demonstrates token lifecycle and ownership checks. [Ledgerly](https://github.com/memorim/ledgerly-finance-dashboard) focuses on monetary calculations and atomic CSV imports. [LumenWatch](https://github.com/memorim/lumenwatch-website-monitor) and [Quorum](https://github.com/memorim/quorum-github-analyzer) expose Python services through REST and MCP.
+---
 
-Other repositories include responsive websites, design test assignments and a Flutter API client. Their READMEs distinguish implemented behavior from visual concepts and planned integrations.
+## `02 // CORE SKILLS`
+
+<table>
+<tr>
+<td width="100%" valign="top">
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,ts,js,html,css,dart,fastapi,django,nodejs,express,react,postgres,sqlite,docker,git,linux,flutter&perline=17" alt="Core skills"/>
+</p>
+
+<ul>
+  <li><b>languages:</b> Python · TypeScript · JavaScript · HTML · CSS · Dart</li>
+  <li><b>backend:</b> FastAPI · Django · Node.js · Express · REST APIs</li>
+  <li><b>frontend:</b> React · HTML · CSS</li>
+  <li><b>data:</b> PostgreSQL · SQLite</li>
+  <li><b>systems & tools:</b> Docker · Git · Linux · browser automation · MCP · Flutter</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+---
+
+## `03 // ENGINEERING`
+
+<table align="center">
+<tr>
+
+<td width="25%" valign="top">
+
+### `BACKEND`
+
+REST APIs  
+request validation  
+application logic  
+service layer
+
+</td>
+
+<td width="25%" valign="top">
+
+### `WEB`
+
+responsive interfaces  
+component-based UI  
+frontend logic  
+API interaction
+
+</td>
+
+<td width="25%" valign="top">
+
+### `DATA`
+
+PostgreSQL · SQLite  
+schema design  
+data querying  
+persistence
+
+</td>
+
+<td width="25%" valign="top">
+
+### `AUTOMATION`
+
+browser automation  
+scripted workflows  
+system integrations  
+MCP tooling
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="25%" valign="top">
+
+### `MOBILE`
+
+Flutter apps  
+cross-platform UI  
+client-side logic  
+API integration
+
+</td>
+
+<td width="25%" valign="top">
+
+### `SYSTEMS`
+
+Docker environments  
+Linux workflows  
+service runtime  
+local environments
+
+</td>
+
+<td width="25%" valign="top">
+
+### `INTEGRATIONS`
+
+REST communication  
+external services  
+client-server flow  
+system connections
+
+</td>
+
+<td width="25%" valign="top">
+
+### `WORKFLOW`
+
+Git  
+version control  
+development tooling  
+project workflow
+
+</td>
+
+</tr>
+</table>
+
+---
+
+<table>
+<tr>
+<td width="40%" valign="middle">
+  <a href="https://abrakadabra.fun/5901-jel-tetrad-smerti-skrinshoty.html">
+    <img src="https://abrakadabra.fun/uploads/posts/2021-12/1639926625_2-abrakadabra-fun-p-el-tetrad-smerti-skrinshoti-2.jpg" width="100%" alt="L — Death Note anime"/>
+  </a>
+</td>
+<td width="60%" valign="middle">
+
+### `FINAL NOTE`
+
+```text
+ㅤ
+ㅤ
+works on my machine.
+ㅤ
+ㅤ
+```
+
+</td>
+</tr>
+</table>
