@@ -11,4 +11,29 @@ test('category links, filtering, invalid category fallback and browser back stay
  buttons.find(button=>button.dataset.filter==='design').click();assert.equal(cards.filter(card=>!card.hidden).length,3);
  location.search='?category=missing';events.popstate();assert.equal(cards.filter(card=>!card.hidden).length,17);
  buttons[0].click();assert.equal(location.search,'');assert.equal(buttons[0]['aria-pressed'],'true');
+ assert.equal(result.textContent,'17 projects');
+ for(const [category,count] of [['backend',5],['full-stack',9],['frontend',5],['design',3]]){
+  buttons.find(button=>button.dataset.filter===category).click();
+  assert.equal(cards.filter(card=>!card.hidden).length,count);
+  assert.equal(result.textContent,`${count} projects`);
+ }
+});
+
+test('every illustrated project retains a live link and its own repository',()=>{
+ const html=readFileSync(new URL('../catalog/index.html',import.meta.url),'utf8');
+ assert.match(html,/<html lang="en">/);
+ const cards=[...html.matchAll(/<article class="project"[\s\S]*?<\/article>/g)].map(match=>match[0]);
+ const sources=new Set();
+ for(const card of cards){
+  assert.match(card,/class="project-art art-(main|more) art-[a-z-]+" aria-hidden="true"/);
+  assert.equal([...card.matchAll(/<a href="https:\/\//g)].length,2);
+  assert.match(card,/>Open project ↗<\/a>/);
+  const source=card.match(/href="(https:\/\/github.com\/memorim\/[^\"]+)"/)[1];
+  sources.add(source);
+ }
+ assert.equal(sources.size,17);
+ const css=readFileSync(new URL('../catalog/styles.css',import.meta.url),'utf8');
+ for(const match of css.matchAll(/url\("([^\"]+)"\)/g)){
+  assert.ok(readFileSync(new URL(`../catalog/${match[1]}`,import.meta.url)).length>0);
+ }
 });

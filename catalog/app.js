@@ -5,7 +5,7 @@ function filterProjects() {
   const category = buttons.some(button => button.dataset.filter === requested) ? requested : "all";
   buttons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.filter === category)));
   cards.forEach(card => { card.hidden = category !== "all" && !card.dataset.category.split(" ").includes(category); });
-  document.querySelector(".result").textContent = `Проектов: ${cards.filter(card => !card.hidden).length}`;
+  document.querySelector(".result").textContent = `${cards.filter(card => !card.hidden).length} projects`;
 }
 buttons.forEach(button => button.addEventListener("click", () => {
   const url = new URL(location.href);
