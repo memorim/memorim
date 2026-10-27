@@ -16,7 +16,7 @@ scope        application · data · infrastructure
 approach     design → implement → test → maintain
 ```
 
-I build backend and full-stack applications. <bold>Projects ↓</bold>
+I build backend and full-stack applications. <strong> Projects ↓ </strong>
 
 My priorities are clear architecture, maintainable code, predictable behavior and practical solutions to real problems.
 
