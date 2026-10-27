@@ -62,7 +62,7 @@ nav button {
   font-size: 25px;
   cursor: pointer;
 }
-nav button::before {
+nav button::before, nav button::after {
   content: "";
   position: absolute;
   inset: -4px -5px -4px -7px;
@@ -70,10 +70,11 @@ nav button::before {
   background: url("assets/tab.svg") center / 100% 100% no-repeat;
   pointer-events: none;
 }
-nav button:nth-child(2n)::before { transform: rotate(-.6deg); }
-nav button:nth-child(3n)::before { transform: rotate(.5deg); }
+nav button::after { background-image: url("assets/tab-active.svg"); opacity: 0; }
+nav button:nth-child(2n)::before, nav button:nth-child(2n)::after { transform: rotate(-.6deg); }
+nav button:nth-child(3n)::before, nav button:nth-child(3n)::after { transform: rotate(.5deg); }
 nav button[aria-pressed="true"] { color: #fff; text-shadow: 1px 0 #171717, -1px 0 #171717, 0 1px #171717, 0 -1px #171717; }
-nav button[aria-pressed="true"]::before { background-image: url("assets/tab-active.svg"); }
+nav button[aria-pressed="true"]::after { opacity: 1; }
 nav button:focus-visible { outline-color: #171717; }
 .contact { margin-top: 48px; font-size: 20px; text-decoration: none; white-space: nowrap; }
 .contact:hover { text-decoration: underline; }
@@ -103,6 +104,7 @@ h1::after {
   padding: 13px 17px 10px;
   border: 2px solid transparent;
   border-image: url("assets/ink-frame.svg") 12 / 10px / 1px stretch;
+  background-color: #fff;
 }
 .project[hidden] { display: none; }
 .project-art { aspect-ratio: 2; width: 100%; background-repeat: no-repeat; margin: 0 0 8px; }
@@ -162,4 +164,23 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding-top: 
   h1 { font-size: 44px; }
   .project { padding-inline: 14px; }
   .links { font-size: 19px; }
+}
+
+.project:focus-within { background-color: #fafafa; box-shadow: 3px 5px 0 #17171714; }
+@media (hover: hover) and (pointer: fine) {
+  .project:hover { background-color: #fafafa; box-shadow: 3px 5px 0 #17171714; }
+  nav button:not([aria-pressed="true"]):hover::after { opacity: .12; }
+  a:not(.skip-link):hover { opacity: .75; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .project { transition: transform 240ms cubic-bezier(.2, .75, .25, 1), background-color 240ms ease, box-shadow 240ms ease; }
+  nav button, a:not(.skip-link) { transition: transform 160ms ease, opacity 160ms ease, color 160ms ease, text-shadow 160ms ease; }
+  nav button::after { transition: opacity 180ms ease; }
+  .project:focus-within { transform: translateY(-4px); }
+  nav button:active, a:not(.skip-link):active { transform: translateY(1px) scale(.98); transition-duration: 70ms; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .project:hover { transform: translateY(-4px); }
+  nav button:not(:active):hover { transform: translateY(-2px); }
+  a:not(.skip-link):not(:active):hover { transform: translateY(-1px); }
 }
