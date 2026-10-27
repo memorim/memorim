@@ -16,6 +16,7 @@ test('category links, filtering, invalid category fallback and browser back stay
   buttons.find(button=>button.dataset.filter===category).click();
   assert.equal(cards.filter(card=>!card.hidden).length,count);
   assert.equal(result.textContent,`${count} projects`);
+  assert.equal(buttons.filter(button=>button['aria-pressed']==='true').length,1);
  }
 });
 
