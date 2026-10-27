@@ -161,7 +161,6 @@ project workflow
 
 [![Открыть каталог проектов с фильтром по направлениям](catalog/preview.png)](https://memorim.github.io/memorim/)
 
----
 
 <table>
 <tr>
