@@ -185,4 +185,3 @@ works on my machine.
 
 [![Открыть каталог проектов с фильтром по направлениям](catalog/preview.png)](https://memorim.github.io/memorim/)
 
-[Все проекты](https://memorim.github.io/memorim/) · [Backend](https://memorim.github.io/memorim/?category=backend) · [Full-stack](https://memorim.github.io/memorim/?category=full-stack) · [Frontend](https://memorim.github.io/memorim/?category=frontend) · [Design](https://memorim.github.io/memorim/?category=design)
