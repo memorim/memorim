@@ -185,11 +185,3 @@ works on my machine.
 </td>
 </tr>
 </table>
-
----
-
-## `04 // Projects`
-
-[![Открыть каталог проектов с фильтром по направлениям](catalog/preview.png)](https://memorim.github.io/memorim/)
-
----
