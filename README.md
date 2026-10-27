@@ -181,7 +181,7 @@ works on my machine.
 </table>
 
 
-## Каталог проектов
+## `04 // Projects`
 
 [![Открыть каталог проектов с фильтром по направлениям](catalog/preview.png)](https://memorim.github.io/memorim/)
 
