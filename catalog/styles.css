@@ -13,7 +13,6 @@ html { color-scheme: light; background: #fff; color: #171717; }
 body { margin: 0; padding: 18px; font: 20px/1.35 "Patrick Hand", cursive; }
 button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration-thickness: 1.5px; text-underline-offset: 5px; }
-a:hover { text-decoration-style: wavy; }
 :focus-visible { outline: 2px dashed currentColor; outline-offset: 5px; }
 .skip-link { position: fixed; top: -100px; left: 24px; z-index: 10; background: #fff; padding: 10px; }
 .skip-link:focus { top: 8px; }
@@ -166,21 +165,40 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding-top: 
   .links { font-size: 19px; }
 }
 
-.project:focus-within { background-color: #fafafa; box-shadow: 3px 5px 0 #17171714; }
+/* Ink and paper feedback stays anchored: no scaling or moving hit targets. */
+.project::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border: 2px solid transparent;
+  border-image: url("assets/ink-frame.svg") 12 / 10px / 1px stretch;
+  box-shadow: 0 5px 18px #17171712;
+  opacity: 0;
+  pointer-events: none;
+}
+.project h2 {
+  width: fit-content;
+  padding-bottom: 5px;
+  background: url("assets/ink-line.svg") left bottom / 0% 5px no-repeat;
+}
+.links a, .github, footer a { background-position: left bottom; background-size: 65% 6px; }
+.contact, .brand { background: url("assets/ink-line.svg") left bottom / 0% 5px no-repeat; }
+.project:focus-within::after { opacity: .8; }
+.project:focus-within h2, a:not(.skip-link):focus-visible { background-size: 100% 5px; }
+nav button::after { clip-path: inset(0 100% 0 0); }
+nav button[aria-pressed="true"]::after { clip-path: inset(0); }
+nav button:active { filter: contrast(1.2); }
+a:not(.skip-link):active { background-size: 100% 7px; }
 @media (hover: hover) and (pointer: fine) {
-  .project:hover { background-color: #fafafa; box-shadow: 3px 5px 0 #17171714; }
-  nav button:not([aria-pressed="true"]):hover::after { opacity: .12; }
-  a:not(.skip-link):hover { opacity: .75; }
+  .project:hover::after { opacity: .8; }
+  .project:hover h2, a:not(.skip-link):hover { background-size: 100% 5px; }
+  nav button:not([aria-pressed="true"]):hover::after { opacity: .1; clip-path: inset(0); }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .project { transition: transform 240ms cubic-bezier(.2, .75, .25, 1), background-color 240ms ease, box-shadow 240ms ease; }
-  nav button, a:not(.skip-link) { transition: transform 160ms ease, opacity 160ms ease, color 160ms ease, text-shadow 160ms ease; }
-  nav button::after { transition: opacity 180ms ease; }
-  .project:focus-within { transform: translateY(-4px); }
-  nav button:active, a:not(.skip-link):active { transform: translateY(1px) scale(.98); transition-duration: 70ms; }
-}
-@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .project:hover { transform: translateY(-4px); }
-  nav button:not(:active):hover { transform: translateY(-2px); }
-  a:not(.skip-link):not(:active):hover { transform: translateY(-1px); }
+  .project::after { transition: opacity 400ms ease; }
+  .project h2, a:not(.skip-link) { transition: background-size 360ms cubic-bezier(.22, 1, .36, 1); }
+  nav button { transition: color 240ms ease, text-shadow 240ms ease, filter 160ms ease; }
+  nav button::after { transition: clip-path 380ms cubic-bezier(.22, 1, .36, 1), opacity 240ms ease; }
+  .project { animation: paper-appear 320ms ease-out; }
+  @keyframes paper-appear { from { opacity: .35; } to { opacity: 1; } }
 }
