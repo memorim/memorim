@@ -157,6 +157,12 @@ project workflow
 
 ---
 
+## `04 // Projects`
+
+[![Открыть каталог проектов с фильтром по направлениям](catalog/preview.png)](https://memorim.github.io/memorim/)
+
+---
+
 <table>
 <tr>
 <td width="40%" valign="middle">
@@ -180,8 +186,10 @@ works on my machine.
 </tr>
 </table>
 
+---
 
 ## `04 // Projects`
 
 [![Открыть каталог проектов с фильтром по направлениям](catalog/preview.png)](https://memorim.github.io/memorim/)
 
+---
