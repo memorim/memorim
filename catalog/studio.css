@@ -94,3 +94,8 @@ footer { padding: calc(12 * var(--u)) 0; font-size: calc(13 * var(--u)); }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .dust, .game-sparkles, .coffee-steam { display: none; }
 }
+
+/* Cover the old printed catalogue below the tilted live screen. */
+.studio::after { content: ""; position: absolute; left: 37.2%; width: 42.9%; height: calc(28 * var(--u)); bottom: 0; background: #fcf4d9; z-index: 0; pointer-events: none; }
+.sketchbook { z-index: 1; }
+@media (max-width: 900px), (max-aspect-ratio: 6/5) { .studio::after { display: none; } }
