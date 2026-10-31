@@ -29,9 +29,7 @@ h1::after { height: calc(4 * var(--u)); bottom: calc(5 * var(--u)); background: 
 .projects { gap: calc(5 * var(--u)); grid-template-columns: repeat(3,minmax(0,1fr)); scroll-margin-top: 0; }
 .project { padding: calc(5 * var(--u)) calc(12 * var(--u)) calc(3 * var(--u)); height: calc(148 * var(--u)); border-width: 1px; border-image-width: calc(4 * var(--u)); background: #fffbed80; }
 .project::after { border-image-width: 4px; box-shadow: 0 3px 8px #49341620; }
-.project-art { height: calc(88 * var(--u)); flex-shrink: 0; width: 100%; margin: 0; aspect-ratio: auto; mix-blend-mode: multiply; }
-.project-art:has(svg) { background: none; clip-path: none; }
-.project-art svg { display: block; width: 100%; height: 100%; overflow: hidden; filter: grayscale(1) contrast(1.15) brightness(1.12); }
+.project-art { height: calc(88 * var(--u)); flex-shrink: 0; width: calc(176 * var(--u)); max-width: 100%; margin: 0 auto; aspect-ratio: 2; clip-path: none; mix-blend-mode: multiply; }
 .project { animation: none; }
 h2, .project h2 { font: calc(15 * var(--u))/1.15 "Patrick Hand",cursive; padding: 0; }
 .project > p { margin: 0; font-size: calc(12 * var(--u)); line-height: 1.15; }
@@ -61,7 +59,7 @@ footer { padding: calc(12 * var(--u)) 0; font-size: calc(13 * var(--u)); }
   .intro > p { font-size: 15px; }
   .projects { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
   .project { height: auto; padding: 10px 12px 4px; }
-  .project-art { height: auto; aspect-ratio: 2; }
+  .project-art { width: 100%; height: auto; aspect-ratio: 2; }
   .project h2 { font-size: 21px; }
   .project > p { font-size: 16px; }
   .links { font-size: 16px; gap: 6px; }
