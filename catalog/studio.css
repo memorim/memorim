@@ -124,7 +124,7 @@ main { padding-bottom: calc(50 * var(--u)); scroll-padding-block: calc(20 * var(
   .project { background-color: #fffcec30; }
   .sketchbook::after {
     z-index: 6;
-    background: url("assets/screen-light.svg") 0 0 / 100% 100% no-repeat;
+    background: none;
     box-shadow: inset 0 calc(2 * var(--u)) calc(7 * var(--u)) #49362136,
       inset calc(1 * var(--u)) 0 calc(3 * var(--u)) #7963462b,
       inset calc(-2 * var(--u)) 0 calc(6 * var(--u)) #715a3230;
