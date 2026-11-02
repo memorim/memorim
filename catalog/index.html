@@ -9,8 +9,8 @@
   <link rel="preload" href="assets/fonts/PatrickHand-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/studio-room.jpg" as="image" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="studio.css?v=20261102.3">
-  <link rel="stylesheet" href="room.css?v=20261102.3">
+  <link rel="stylesheet" href="studio.css?v=20261102.4">
+  <link rel="stylesheet" href="room.css?v=20261102.4">
 </head>
 <body>
   <a class="skip-link" href="#projects">Skip to projects</a>
@@ -73,6 +73,10 @@
               <animate attributeName="scale" values="0;0;-5;2;0;0" keyTimes="0;.55;.57;.60;.64;1" dur="17.3s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
             </feDisplacementMap>
           </filter>
+          <radialGradient id="cat-bead" cx="32%" cy="24%" r="76%">
+            <stop stop-color="#64716a"/><stop offset=".4" stop-color="#17221f"/>
+            <stop offset=".78" stop-color="#080f0e"/><stop offset="1" stop-color="#34443d"/>
+          </radialGradient>
           <filter id="steam-soft" x="-50%" y="-30%" width="200%" height="170%"><feGaussianBlur stdDeviation="1.5"/></filter>
           <linearGradient id="steam-fade" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">
             <stop stop-color="#fff4dc" stop-opacity="0"/><stop offset=".18" stop-color="#fff4dc" stop-opacity=".55"/>
@@ -100,15 +104,18 @@
           <circle cx="72" cy="376" r="1.25"/><circle cx="188" cy="311" r="1"/>
           <circle cx="223" cy="220" r="1.1"/><circle cx="102" cy="406" r=".8"/>
         </g>
-        <!-- Rounded ink eyes and warm catchlights match the illustrated sleepy face. -->
+        <!-- Glossy bead eyes: rounded dark centres, a soft rim and two white catchlights. -->
         <g class="cat-eyes">
-          <ellipse class="cat-eye" cx="542.5" cy="56" rx="8.7" ry="7.8"/>
-          <ellipse class="cat-eye" cx="584.5" cy="57" rx="8.3" ry="7.8"/>
+          <ellipse class="cat-eye" cx="542.5" cy="55.8" rx="9" ry="9.2"/>
+          <ellipse class="cat-eye" cx="584.5" cy="56.8" rx="8.8" ry="9.2"/>
           <g class="cat-eye-glint">
-            <ellipse cx="539.7" cy="53.1" rx="2.1" ry="2.4"/>
-            <ellipse cx="581.8" cy="54.1" rx="2.1" ry="2.4"/>
-            <circle cx="545.6" cy="59" r=".9"/>
-            <circle cx="587.6" cy="60" r=".9"/>
+            <ellipse cx="539.7" cy="52.5" rx="3" ry="3.2"/>
+            <ellipse cx="581.8" cy="53.5" rx="3" ry="3.2"/>
+            <circle cx="546" cy="59.5" r="1.3"/>
+            <circle cx="588" cy="60.5" r="1.3"/>
+          </g>
+          <g class="cat-eye-rim" fill="none">
+            <path d="M536 60 Q541 65 547 61 M578 61 Q583 66 589 62"/>
           </g>
         </g>
       </svg>
@@ -306,9 +313,13 @@
     <svg class="desk-foreground" viewBox="0 0 1792 878" aria-hidden="true" focusable="false">
       <defs>
         <clipPath id="desk-contour">
-          <path d="M1263 878 L1280 875.8 Q1326 866.4 1369 861.3 L1417.6 855.2
-            L1417.6 835 Q1417.8 831.4 1422 831 L1430 829.7 L1430 826
-            Q1430.5 823.5 1435.2 822.6 L1473 815.2 L1792 815.2 V878 Z"/>
+          <path d="M1259 878 L1270 876 L1278 875 L1286 872 L1294 871 L1302 870
+            L1310 869 L1318 867 L1326 866 L1334 865 L1342 864 L1350 863
+            L1358 862 L1366 861 L1374 860 L1382 859 L1390 858 L1398 857
+            L1406 856 L1414 855 L1417 854.5 L1417 835 Q1417 831 1422 830.5
+            L1429.5 829.3 L1429.5 826 Q1430 823 1435 822 L1473 814.8
+            L1792 814.8 V878 Z"/>
+          <path d="M0 835 H630 L644 836 L658 835 Q664 835 665 840 L667 878 H0 Z"/>
         </clipPath>
       </defs>
       <image href="assets/studio-room.jpg" width="1792" height="878" clip-path="url(#desk-contour)"/>
@@ -319,6 +330,6 @@
     <span>Pause animation</span>
   </button>
   <script src="app.js"></script>
-  <script type="module" src="room.mjs?v=20261102.3"></script>
+  <script type="module" src="room.mjs?v=20261102.4"></script>
 </body>
 </html>

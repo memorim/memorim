@@ -12,8 +12,9 @@
   opacity: 0; transform: scaleY(.12); transform-origin: 563px 57px;
   transition: opacity 160ms ease, transform 380ms cubic-bezier(.2,.7,.3,1);
 }
-.cat-eye { fill: #3c3028; stroke: #302820; stroke-width: .8; }
-.cat-eye-glint { fill: #fff5d9; }
+.cat-eye { fill: url(#cat-bead); stroke: #abb5a0; stroke-width: .9; }
+.cat-eye-glint { fill: #fffef2; }
+.cat-eye-rim { stroke: #b9c9ac; stroke-width: .65; opacity: .7; stroke-linecap: round; }
 .cat-awake .cat-eyes { opacity: 1; transform: scaleY(1); }
 .coffee-steam { opacity: .8; }
 .steam-ribbon { animation: steam-rise 7.5s linear infinite; transform-origin: 155px 695px; }

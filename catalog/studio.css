@@ -130,3 +130,6 @@ main { padding-bottom: calc(50 * var(--u)); scroll-padding-block: calc(20 * var(
       inset calc(-2 * var(--u)) 0 calc(6 * var(--u)) #715a3230;
   }
 }
+
+/* Only the actual, clipped foreground blocks links hidden underneath it. */
+.desk-foreground image { pointer-events: visiblePainted; }
