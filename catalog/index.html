@@ -10,12 +10,107 @@
   <link rel="preload" href="assets/studio-room.jpg" as="image" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="studio.css">
+  <link rel="stylesheet" href="room.css">
 </head>
 <body>
   <a class="skip-link" href="#projects">Skip to projects</a>
   <div class="studio">
     <div class="room" aria-hidden="true">
       <div class="room-art"></div>
+      <svg class="room-layers room-motion" viewBox="0 0 1792 878" aria-hidden="true" focusable="false">
+        <defs>
+          <filter id="motion-canopy" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="18" y="0" width="184" height="156" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="18" y="0" width="184" height="156" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;6;0;-4;0" keyTimes="0;.25;.5;.75;1" dur="7.8s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-monstera" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="180" y="46" width="165" height="207" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="180" y="46" width="165" height="207" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;-7;0;5;0" keyTimes="0;.25;.5;.75;1" dur="9.3s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-sill" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="252" y="332" width="196" height="180" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="252" y="332" width="196" height="180" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;5;0;-3;0" keyTimes="0;.25;.5;.75;1" dur="8.6s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-trailing" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="1449" y="0" width="116" height="304" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="1449" y="0" width="116" height="304" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;-5;0;7;0" keyTimes="0;.25;.5;.75;1" dur="10.7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-right-leaves" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="1654" y="0" width="138" height="251" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="1654" y="0" width="138" height="251" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;5;0;-5;0" keyTimes="0;.25;.5;.75;1" dur="8.9s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-desk-leaves" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="1633" y="499" width="159" height="145" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="1633" y="499" width="159" height="145" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;-4;0;6;0" keyTimes="0;.25;.5;.75;1" dur="9.8s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-breathing" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="393" y="12" width="120" height="97" color-interpolation-filters="sRGB">
+            <feImage href="assets/breath-field.svg" x="393" y="12" width="120" height="97" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;4.5;0" keyTimes="0;.42;1" dur="4.8s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-ear-left" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="490" y="0" width="54" height="59" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="490" y="0" width="54" height="59" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;0;5;-2;0;0" keyTimes="0;.70;.72;.75;.79;1" dur="13.7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="motion-ear-right" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="572" y="0" width="55" height="60" color-interpolation-filters="sRGB">
+            <feImage href="assets/leaf-field.svg" x="572" y="0" width="55" height="60" preserveAspectRatio="none" result="field"/>
+            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;0;-5;2;0;0" keyTimes="0;.55;.57;.60;.64;1" dur="17.3s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+          </filter>
+          <filter id="steam-soft" x="-50%" y="-30%" width="200%" height="170%"><feGaussianBlur stdDeviation="1.5"/></filter>
+          <linearGradient id="steam-fade" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">
+            <stop stop-color="#fff4dc" stop-opacity="0"/><stop offset=".18" stop-color="#fff4dc" stop-opacity=".55"/>
+            <stop offset=".65" stop-color="#fff4dc" stop-opacity=".26"/><stop offset="1" stop-color="#fff4dc" stop-opacity="0"/>
+          </linearGradient>
+          <radialGradient id="lamp-light"><stop stop-color="#ffe5a2" stop-opacity=".13"/><stop offset="1" stop-color="#ffe5a2" stop-opacity="0"/></radialGradient>
+        </defs>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-canopy)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-monstera)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-sill)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-trailing)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-right-leaves)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-desk-leaves)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-breathing)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-ear-left)"/>
+        <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-ear-right)"/>
+        <!-- Vapour originates inside the painted mug, not from the rim or handle. -->
+        <g class="coffee-steam" fill="none" stroke="url(#steam-fade)" stroke-width="3" stroke-linecap="round" filter="url(#steam-soft)">
+          <path class="steam-ribbon" d="M139 696 C124 682 153 667 139 651 S126 624 145 604"/>
+          <path class="steam-ribbon" d="M158 696 C175 679 146 666 157 649 S174 626 158 611"/>
+          <path class="steam-ribbon" d="M176 696 C165 682 184 670 173 653 S166 636 179 620"/>
+        </g>
+        <ellipse class="lamp-breath" cx="111" cy="339" rx="111" ry="117" fill="url(#lamp-light)"/>
+        <g class="sun-dust" fill="#fff1c5">
+          <circle cx="72" cy="376" r="1.25"/><circle cx="188" cy="311" r="1"/>
+          <circle cx="223" cy="220" r="1.1"/><circle cx="102" cy="406" r=".8"/>
+        </g>
+        <!-- Almond shapes cover only the original eyelid strokes; the face stays original. -->
+        <g class="cat-eyes">
+          <path class="cat-eye" d="M534 55 Q541 48 550 57 Q542 65 534 55Z"/>
+          <path class="cat-eye" d="M577 58 Q585 49 592 55 Q586 64 577 58Z"/>
+          <path class="cat-pupil" d="M542 52 Q539.5 57 542 61 Q544 57 542 52Z M585 52 Q582.5 57 585 61 Q587 57 585 52Z"/>
+          <path class="cat-eye-glint" d="M540.7 54.1h.7 M583.7 54.1h.7"/>
+        </g>
+      </svg>
+    </div>
+    <div class="scene-interaction">
+      <button class="cat-hit" type="button" aria-label="Wake the sleepy cat" title="A sleepy friend"></button>
     </div>
     <div class="sketchbook">
     <header class="topbar">
@@ -215,6 +310,11 @@
       <image href="assets/studio-room.jpg" width="1792" height="878" clip-path="url(#desk-contour)"/>
     </svg>
   </div>
+  <button class="motion-toggle" type="button" aria-label="Pause room animation" hidden>
+    <svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path class="pause-icon" d="M5 3v10M11 3v10"/><path class="play-icon" d="m5 3 7 5-7 5Z"/></svg>
+    <span>Pause animation</span>
+  </button>
   <script src="app.js"></script>
+  <script type="module" src="room.mjs"></script>
 </body>
 </html>

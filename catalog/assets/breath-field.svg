@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs><radialGradient id="breath" cx="50%" cy="38%" r="55%">
+    <stop stop-color="#80ff80"/><stop offset=".45" stop-color="#80d080"/>
+    <stop offset="1" stop-color="#808080"/>
+  </radialGradient></defs><path fill="#808080" d="M0 0h200v200H0z"/>
+  <path fill="url(#breath)" d="M0 0h200v200H0z"/>
+</svg>
