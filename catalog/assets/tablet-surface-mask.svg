@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="884" height="786" viewBox="0 0 884 786" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="header" x1="0" y1="248" x2="0" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="content" x1="100" y1="0" x2="115" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0"/><stop offset="1" stop-color="white"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="7" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0"/><stop offset="1" stop-color="white"/>
+    </linearGradient>
+    <mask id="soft-edge"><path d="M0 0h884v786H0z" fill="url(#edge)"/></mask>
+  </defs>
+  <g mask="url(#soft-edge)">
+    <path d="M0 0h884v786H0z" fill="url(#header)"/>
+    <path d="M0 0h884v786H0z" fill="url(#content)"/>
+  </g>
+</svg>

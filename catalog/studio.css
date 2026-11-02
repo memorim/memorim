@@ -9,13 +9,13 @@ html { overflow-x: clip; }
 .room-layers { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .sketchbook { position: absolute; left: 30.8%; top: 9.55%; bottom: 0; width: 49.3%; max-width: none; margin: 0; border: 0; display: grid; grid-template-columns: calc(114 * var(--u)) minmax(0,1fr); grid-template-rows: calc(34 * var(--u)) minmax(0,1fr); background: transparent; transform: skewY(-.85deg); transform-origin: top left; overflow: hidden; }
 .sketchbook::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 3; background: linear-gradient(123deg,#e3a74116,transparent 25%,#fff8d411 55%,#8b61340a); box-shadow: inset 0 8px 12px -10px #5e4839; }
-.topbar { height: calc(34 * var(--u)); min-height: 0; margin: 0; padding: 0 calc(20 * var(--u)); gap: calc(20 * var(--u)); font-size: calc(13 * var(--u)); flex-wrap: nowrap; background-color: #f7ecd0; background-size: 100% calc(2 * var(--u)); }
+.topbar { height: calc(34 * var(--u)); min-height: 0; margin: 0; padding: 0 calc(20 * var(--u)); gap: calc(20 * var(--u)); font-size: calc(13 * var(--u)); flex-wrap: nowrap; background-color: transparent; background-size: 100% calc(2 * var(--u)); }
 .brand { font-family: "Patrick Hand",cursive; }
 .contact { min-height: 0; gap: calc(4 * var(--u)); padding: 0 calc(7 * var(--u)); font-size: calc(13 * var(--u)); border-width: 1px; background-color: #fff8df; border-image-width: 3px; box-shadow: 1px 1px #463f3b30; }
 .contact img { width: calc(13 * var(--u)); height: calc(13 * var(--u)); mix-blend-mode: multiply; }
 .github { background-size: 100% 2px; }
 .sidebar { position: static; min-height: 0; padding: calc(17 * var(--u)) calc(9 * var(--u)) 0; }
-nav { display: grid; gap: calc(5 * var(--u)); background: #f8edcd; box-shadow: 0 0 0 calc(5 * var(--u)) #f8edcd; }
+nav { display: grid; gap: calc(5 * var(--u)); background: none; box-shadow: none; }
 nav button { width: 100%; min-height: calc(34 * var(--u)); padding: calc(5 * var(--u)) calc(11 * var(--u)); font-size: calc(15 * var(--u)); }
 nav button::before, nav button::after { inset: -2px; }
 main { padding: 0 calc(8 * var(--u)) calc(12 * var(--u)) calc(10 * var(--u)); background-color: #fcf4d9; background-size: calc(2 * var(--u)) 100%; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #87795850 transparent; container-type: normal; }
@@ -118,9 +118,9 @@ main { padding-bottom: calc(50 * var(--u)); scroll-padding-block: calc(20 * var(
     border-radius: calc(2 * var(--u)) calc(5 * var(--u)) 0 0;
     isolation: isolate;
   }
-  .topbar { height: calc(28 * var(--u)); background-color: #f9f0d5; }
+  .topbar { height: calc(28 * var(--u)); background-color: transparent; }
   .sidebar { padding-top: calc(9 * var(--u)); }
-  main { background-color: #fbf4dc; }
+  main { background-color: transparent; }
   .project { background-color: #fffcec30; }
   .sketchbook::after {
     z-index: 6;
@@ -133,3 +133,18 @@ main { padding-bottom: calc(50 * var(--u)); scroll-padding-block: calc(20 * var(
 
 /* Only the actual, clipped foreground blocks links hidden underneath it. */
 .desk-foreground image { pointer-events: visiblePainted; }
+
+/* One continuous screen surface replaces the separate rectangular UI patches.
+   The feathered L-shaped mask clears the old printed interface while keeping
+   the original notes on the lower left of the tablet fully visible. */
+@media (min-width: 901px) and (min-aspect-ratio: 6/5) {
+  .sketchbook::before {
+    content: "";
+    position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: radial-gradient(ellipse at 12% 22%, #fff1c85c, transparent 58%),
+      linear-gradient(112deg, #fbf1d3, #fbf4dc 45%, #faf3db);
+    -webkit-mask: url("assets/tablet-surface-mask.svg") 0 0 / 100% 100% no-repeat;
+    mask: url("assets/tablet-surface-mask.svg") 0 0 / 100% 100% no-repeat;
+  }
+  .sidebar nav button { mix-blend-mode: multiply; }
+}
