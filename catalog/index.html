@@ -93,6 +93,23 @@
         <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-breathing)"/>
         <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-ear-left)"/>
         <image class="paint-motion" href="assets/studio-room.jpg" width="1792" height="878" filter="url(#motion-ear-right)"/>
+        <!-- Only the eyes move; the original soot bodies and silhouettes stay painted. -->
+        <g class="soot-face soot-left" data-x="419.5" data-y="732.5">
+          <ellipse cx="419.5" cy="732.5" rx="20" ry="12.5" fill="#0b0a07"/>
+          <g class="soot-eye-pair">
+            <ellipse cx="410.4" cy="733" rx="7" ry="8.3" fill="#fff5bc"/>
+            <ellipse cx="429" cy="732" rx="7" ry="8.3" fill="#fff5bc"/>
+            <g class="soot-look" fill="#171710"><ellipse cx="410.4" cy="733" rx="2.5" ry="3.1"/><ellipse cx="429" cy="732" rx="2.5" ry="3.1"/></g>
+          </g>
+        </g>
+        <g class="soot-face soot-right" data-x="1572" data-y="336.5">
+          <ellipse cx="1572" cy="336.5" rx="17.5" ry="11.7" fill="#080a08"/>
+          <g class="soot-eye-pair">
+            <ellipse cx="1563.5" cy="337" rx="5.8" ry="7.2" fill="#efdec0"/>
+            <ellipse cx="1580" cy="336" rx="6" ry="7.2" fill="#efdec0"/>
+            <g class="soot-look" fill="#111815"><ellipse cx="1563.5" cy="337" rx="2.3" ry="2.8"/><ellipse cx="1580" cy="336" rx="2.3" ry="2.8"/></g>
+          </g>
+        </g>
         <!-- Vapour originates inside the painted mug, not from the rim or handle. -->
         <g class="coffee-steam" fill="none" stroke="url(#steam-fade)" stroke-width="3" stroke-linecap="round" filter="url(#steam-soft)">
           <path class="steam-ribbon" d="M139 696 C124 682 153 667 139 651 S126 624 145 604"/>
@@ -331,5 +348,6 @@
   </button>
   <script src="app.js"></script>
   <script type="module" src="room.mjs?v=20261102.4"></script>
+  <script type="module" src="room-interactions.mjs?v=20261102.5"></script>
 </body>
 </html>

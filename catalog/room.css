@@ -66,3 +66,13 @@
 @media (prefers-reduced-motion: reduce) {
   .room-motion *, .motion-toggle { transition: none !important; }
 }
+
+/* Independent, infrequent blinks and a small gaze inside the painted whites. */
+.soot-eye-pair { transform-box: fill-box; transform-origin: center; animation: soot-blink 9.7s linear infinite; }
+.soot-right .soot-eye-pair { animation-duration: 13.1s; animation-delay: -4.6s; }
+.soot-look { transition: transform 140ms ease-out; }
+@keyframes soot-blink {
+  0%, 93%, 96%, 100% { transform: scaleY(1); }
+  94.2%, 94.9% { transform: scaleY(.06); }
+}
+.room-paused .soot-face { visibility: hidden; }

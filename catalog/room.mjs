@@ -40,6 +40,7 @@ if (typeof document !== 'undefined') {
     toggle.setAttribute('aria-label', running ? 'Pause room animation' : 'Resume room animation');
     toggle.querySelector('span').textContent = running ? 'Pause animation' : 'Resume animation';
     if (!running || document.hidden) nap.rest();
+    document.dispatchEvent?.(new Event('roommotionchange'));
   }
   // Hover, keyboard focus and touch all greet the same original painted cat.
   cat.addEventListener('pointerenter', event => { if (event.pointerType !== 'touch') nap.greet(); });
