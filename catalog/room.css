@@ -92,3 +92,31 @@
 
 /* The same bead eyes soften into a satisfied squint after three gentle strokes. */
 .cat-content .cat-eyes { opacity: 1; transform: scaleY(.16); transition: transform 420ms ease, opacity 200ms ease; }
+
+.console-hit {
+  position: absolute; left: 88.5%; top: 73.8%; width: 5.7%; height: 14.6%;
+  padding: 0; border: 0; background: none; border-radius: 12%;
+  pointer-events: auto; cursor: pointer; touch-action: manipulation;
+}
+.console-hit:focus-visible { outline: 2px dashed #fff0b9; outline-offset: 4px; }
+.console-game { opacity: 0; visibility: hidden; transition: opacity 180ms ease, visibility 0s 180ms; }
+.console-playing .console-game { opacity: .96; visibility: visible; transition-delay: 0s; }
+.pixel-player { transform: translate(5px,52px); }
+.pixel-celebration { opacity: 0; }
+.console-playing .pixel-player { animation: pixel-hop 3.4s steps(1,end) both; }
+.console-playing .pixel-star { animation: pixel-collect 3.4s steps(1,end) both; }
+.console-playing .pixel-celebration { animation: pixel-spark 3.4s steps(1,end) both; }
+@keyframes pixel-hop {
+  0%, 12% { transform: translate(5px,52px); }
+  20% { transform: translate(9px,51px); }
+  28% { transform: translate(14px,52px); }
+  36% { transform: translate(19px,48px); }
+  44% { transform: translate(23px,37px); }
+  52% { transform: translate(28px,31px); }
+  60% { transform: translate(33px,39px); }
+  68% { transform: translate(35px,52px) scaleY(.9); }
+  76%, 100% { transform: translate(35px,52px); }
+}
+@keyframes pixel-collect { 0%, 48% { opacity: 1; } 52%, 100% { opacity: 0; } }
+@keyframes pixel-spark { 0%, 48% { opacity: 0; } 52%, 60% { opacity: 1; } 64%, 100% { opacity: 0; } }
+.room-paused .console-game { opacity: 0; visibility: hidden; transition: none; }

@@ -80,6 +80,17 @@ if (typeof document !== 'undefined') {
     if (!running()) { contentment.stop(); petting.reset(); }
   });
   window.addEventListener('pagehide', () => { contentment.stop(); petting.reset(); });
+  const consoleButton = document.querySelector('.console-hit');
+  const consoleScene = createOneShot({
+    show: () => root.classList.add('console-playing'), hide: () => root.classList.remove('console-playing'),
+    duration: 3400, cooldown: 6500,
+  });
+  const play = () => { if (running()) consoleScene.trigger(); };
+  consoleButton.addEventListener('pointerenter', event => { if (event.pointerType !== 'touch') play(); });
+  consoleButton.addEventListener('focus', play);
+  consoleButton.addEventListener('click', play);
+  document.addEventListener('roommotionchange', () => { if (!running()) consoleScene.stop(); });
+  window.addEventListener('pagehide', () => consoleScene.stop());
   let reveals = [];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   function finishReveals() { reveals.forEach(animation => animation.cancel()); reveals = []; }

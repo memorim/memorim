@@ -77,6 +77,8 @@
               <animate attributeName="scale" values="0;0;-5;2;0;0" keyTimes="0;.55;.57;.60;.64;1" dur="17.3s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1 ; .45 0 .55 1"/>
             </feDisplacementMap>
           </filter>
+          <clipPath id="console-glass"><path d="M1632 653 L1682 652 L1669 725 L1619 724Z"/></clipPath>
+          <linearGradient id="console-lcd" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8f9a70"/><stop offset="1" stop-color="#657254"/></linearGradient>
           <radialGradient id="cat-bead" cx="32%" cy="24%" r="76%">
             <stop stop-color="#64716a"/><stop offset=".4" stop-color="#17221f"/>
             <stop offset=".78" stop-color="#080f0e"/><stop offset="1" stop-color="#34443d"/>
@@ -125,6 +127,31 @@
           <circle cx="72" cy="376" r="1.25"/><circle cx="188" cy="311" r="1"/>
           <circle cx="223" cy="220" r="1.1"/><circle cx="102" cy="406" r=".8"/>
         </g>
+        <!-- A tiny, finite pixel adventure stays inside the original console glass. -->
+        <g class="console-game" clip-path="url(#console-glass)">
+          <g transform="matrix(.98 -.02 -.185 1 1632 653)">
+            <path d="M0 0H52V74H0Z" fill="url(#console-lcd)"/>
+            <g fill="#d4dba5" opacity=".5" shape-rendering="crispEdges">
+              <path d="M5 11h7v2H5z M7 9h3v6H7z M35 18h9v2h-9z M38 16h3v6h-3z"/>
+            </g>
+            <g fill="#34462f" shape-rendering="crispEdges">
+              <path d="M0 64h52v2H0z M0 66h52v8H0z" opacity=".55"/>
+              <path d="M3 64v-4h2v4z M5 62h2v-3H5z M41 64v-5h2v5z M43 61h2v-3h-2z"/>
+            </g>
+            <g class="pixel-star" fill="#f1e7ab" shape-rendering="crispEdges">
+              <path d="M32 35h2v3h3v2h-3v3h-2v-3h-3v-2h3z"/>
+            </g>
+            <g class="pixel-player" shape-rendering="crispEdges">
+              <path d="M2 1h2V0h2v1h2v2h2v2h1v4H9v2H7v1H3v-1H1V9H0V5h1V3h1Z" fill="#243329"/>
+              <path d="M2 5h2v3H2z M6 5h2v3H6z" fill="#e9edbc"/>
+              <path d="M3 6h1v1H3z M7 6h1v1H7z" fill="#243329"/>
+            </g>
+            <g class="pixel-celebration" fill="#efe8ae" shape-rendering="crispEdges">
+              <path d="M27 34h2v2h-2z M39 33h2v2h-2z M32 28h2v3h-2z M42 41h2v2h-2z"/>
+            </g>
+            <path d="M0 0h8L0 38z M30 0h2L0 72v-7z" fill="#ffecb0" opacity=".13"/>
+          </g>
+        </g>
         <!-- Glossy bead eyes: rounded dark centres, a soft rim and two white catchlights. -->
         <g class="cat-eyes">
           <ellipse class="cat-eye" cx="542.5" cy="55.8" rx="9" ry="9.2"/>
@@ -143,6 +170,7 @@
     </div>
     <div class="scene-interaction">
       <button class="cat-hit" type="button" aria-label="Wake the sleepy cat" title="A sleepy friend"></button>
+      <button class="console-hit" type="button" aria-label="Play a tiny pixel scene" title="One small adventure"></button>
     </div>
     <div class="sketchbook">
 <svg class="screen-reflections" aria-hidden="true" focusable="false" preserveAspectRatio="none" viewBox="0 0 884 794" fill="none">
