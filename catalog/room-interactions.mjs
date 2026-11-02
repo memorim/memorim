@@ -80,6 +80,23 @@ if (typeof document !== 'undefined') {
     if (!running()) { contentment.stop(); petting.reset(); }
   });
   window.addEventListener('pagehide', () => { contentment.stop(); petting.reset(); });
+  let reveals = [];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  function finishReveals() { reveals.forEach(animation => animation.cancel()); reveals = []; }
+  document.addEventListener('projectsfiltered', () => {
+    finishReveals();
+    if (!running() || reduced.matches) return;
+    const visible = [...document.querySelectorAll('.project')].filter(card => !card.hidden);
+    visible.forEach((card, index) => {
+      if (typeof card.animate !== 'function') return;
+      reveals.push(card.animate([{ opacity: .22 }, { opacity: 1 }], {
+        duration: 260, delay: Math.min(index, 7) * 24,
+        easing: 'cubic-bezier(.22,1,.36,1)', fill: 'backwards',
+      }));
+    });
+  });
+  document.addEventListener('roommotionchange', () => { if (!running() || reduced.matches) finishReveals(); });
+  window.addEventListener('pagehide', finishReveals);
   document.addEventListener('pointermove', event => {
     if (!running() || event.pointerType === 'touch') return;
     pointer = { x: event.clientX, y: event.clientY };
