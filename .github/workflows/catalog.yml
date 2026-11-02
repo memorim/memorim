@@ -19,8 +19,9 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '24.18.0'
-      - run: node --test tests/catalog.test.mjs
+      - run: node --test tests/*.test.mjs
       - run: node --check catalog/app.js
+      - run: node --check catalog/room.mjs
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
