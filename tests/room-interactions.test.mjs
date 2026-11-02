@@ -104,16 +104,16 @@ test('pointer work is coalesced and pausing cancels gaze, console and card anima
   assert.equal(app.time.pending, 0); assert.equal(app.animations.length, 2);
 });
 
-test('quick filter changes cancel earlier fades; reduced motion skips fades and hidden tabs stop scenes', () => {
+test('quick filter changes cancel earlier fades; pausing skips fades and hidden tabs stop scenes', () => {
   const app = mount();
   app.document.fire('projectsfiltered'); app.document.fire('projectsfiltered');
   assert.equal(app.animations.length, 4);
   assert.ok(app.animations.slice(0, 2).every(a => a.cancelled));
   assert.deepEqual(app.animations.slice(2).map(a => a.options.delay), [0, 24]);
   assert.ok(app.animations.every(a => a.keyframes.every(frame => !('transform' in frame))));
-  app.media.matches = true; app.document.fire('projectsfiltered');
+  app.classes.add('room-paused'); app.document.fire('projectsfiltered');
   assert.equal(app.animations.length, 4);
-  app.consoleButton.fire('click'); app.document.hidden = true; app.document.fire('roommotionchange');
+  app.classes.delete('room-paused'); app.consoleButton.fire('click'); app.document.hidden = true; app.document.fire('roommotionchange');
   assert.equal(app.classes.has('console-playing'), false);
   assert.equal(app.time.pending, 0);
 });

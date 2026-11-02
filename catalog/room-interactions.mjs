@@ -92,11 +92,10 @@ if (typeof document !== 'undefined') {
   document.addEventListener('roommotionchange', () => { if (!running()) consoleScene.stop(); });
   window.addEventListener('pagehide', () => consoleScene.stop());
   let reveals = [];
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   function finishReveals() { reveals.forEach(animation => animation.cancel()); reveals = []; }
   document.addEventListener('projectsfiltered', () => {
     finishReveals();
-    if (!running() || reduced.matches) return;
+    if (!running()) return;
     const visible = [...document.querySelectorAll('.project')].filter(card => !card.hidden);
     visible.forEach((card, index) => {
       if (typeof card.animate !== 'function') return;
@@ -106,7 +105,7 @@ if (typeof document !== 'undefined') {
       }));
     });
   });
-  document.addEventListener('roommotionchange', () => { if (!running() || reduced.matches) finishReveals(); });
+  document.addEventListener('roommotionchange', () => { if (!running()) finishReveals(); });
   window.addEventListener('pagehide', finishReveals);
   document.addEventListener('pointermove', event => {
     if (!running() || event.pointerType === 'touch') return;

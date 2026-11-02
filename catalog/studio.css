@@ -91,7 +91,7 @@ footer { padding: calc(12 * var(--u)) 0; font-size: calc(13 * var(--u)); }
   .links { font-size: 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  *:not(.room-motion *), *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  *:not(.room-motion *, .screen-reflections *), *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .room-paused .room-motion * { animation: none !important; }
 }
 
