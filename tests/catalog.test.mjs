@@ -22,7 +22,7 @@ test('category links, filtering, invalid category fallback and browser back stay
 
 test('every illustrated project retains a live link and its own repository',()=>{
  const html=readFileSync(new URL('../catalog/index.html',import.meta.url),'utf8');
- assert.match(html,/<html lang="en">/);
+ assert.match(html,/<html lang="en"(?: class="room-paused")?>/);
  const cards=[...html.matchAll(/<article class="project"[\s\S]*?<\/article>/g)].map(match=>match[0]);
  const sources=new Set();
  for(const card of cards){

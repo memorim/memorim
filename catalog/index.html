@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="room-paused">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -100,12 +100,16 @@
           <circle cx="72" cy="376" r="1.25"/><circle cx="188" cy="311" r="1"/>
           <circle cx="223" cy="220" r="1.1"/><circle cx="102" cy="406" r=".8"/>
         </g>
-        <!-- Almond shapes cover only the original eyelid strokes; the face stays original. -->
+        <!-- Rounded ink eyes and warm catchlights match the illustrated sleepy face. -->
         <g class="cat-eyes">
-          <path class="cat-eye" d="M534 55 Q541 48 550 57 Q542 65 534 55Z"/>
-          <path class="cat-eye" d="M577 58 Q585 49 592 55 Q586 64 577 58Z"/>
-          <path class="cat-pupil" d="M542 52 Q539.5 57 542 61 Q544 57 542 52Z M585 52 Q582.5 57 585 61 Q587 57 585 52Z"/>
-          <path class="cat-eye-glint" d="M540.7 54.1h.7 M583.7 54.1h.7"/>
+          <ellipse class="cat-eye" cx="542.5" cy="56" rx="8.7" ry="7.8"/>
+          <ellipse class="cat-eye" cx="584.5" cy="57" rx="8.3" ry="7.8"/>
+          <g class="cat-eye-glint">
+            <ellipse cx="539.7" cy="53.1" rx="2.1" ry="2.4"/>
+            <ellipse cx="581.8" cy="54.1" rx="2.1" ry="2.4"/>
+            <circle cx="545.6" cy="59" r=".9"/>
+            <circle cx="587.6" cy="60" r=".9"/>
+          </g>
         </g>
       </svg>
     </div>
