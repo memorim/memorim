@@ -57,8 +57,12 @@
           </filter>
           <filter id="motion-breathing" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="393" y="12" width="120" height="97" color-interpolation-filters="sRGB">
             <feImage href="assets/breath-field.svg" x="393" y="12" width="120" height="97" preserveAspectRatio="none" result="field"/>
-            <feDisplacementMap in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
+            <feDisplacementMap result="breathing" in="SourceGraphic" in2="field" scale="0" xChannelSelector="R" yChannelSelector="G">
               <animate attributeName="scale" values="0;4.5;0" keyTimes="0;.42;1" dur="4.8s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1 ; .45 0 .55 1"/>
+            </feDisplacementMap>
+            <feImage href="assets/tail-field.svg" x="393" y="12" width="120" height="97" preserveAspectRatio="none" result="tail-field"/>
+            <feDisplacementMap in="breathing" in2="tail-field" scale="0" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" values="0;0;6;-3;2;0;0" keyTimes="0;.78;.805;.84;.865;.9;1" dur="21s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
             </feDisplacementMap>
           </filter>
           <filter id="motion-ear-left" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="490" y="0" width="54" height="59" color-interpolation-filters="sRGB">

@@ -89,3 +89,6 @@
 }
 .room-paused .screen-reflections *, .page-hidden .screen-reflections * { animation-play-state: paused !important; }
 @media (max-width: 900px), (max-aspect-ratio: 6/5) { .screen-reflections { display: none; } }
+
+/* The same bead eyes soften into a satisfied squint after three gentle strokes. */
+.cat-content .cat-eyes { opacity: 1; transform: scaleY(.16); transition: transform 420ms ease, opacity 200ms ease; }

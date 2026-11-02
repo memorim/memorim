@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="97" viewBox="0 0 120 97">
+  <defs><radialGradient id="tip"><stop stop-color="#ff9880"/><stop offset=".45" stop-color="#c88d80"/><stop offset="1" stop-color="#808080"/></radialGradient></defs>
+  <path fill="#808080" d="M0 0h120v97H0z"/>
+  <ellipse cx="31" cy="70" rx="33" ry="23" fill="url(#tip)"/>
+</svg>
