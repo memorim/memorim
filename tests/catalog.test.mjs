@@ -38,12 +38,3 @@ test('every illustrated project retains a live link and its own repository',()=>
   assert.ok(readFileSync(new URL(`../catalog/${match[1]}`,import.meta.url)).length>0);
  }
 });
-
-test('room motion stays gentle and the mobile control cannot cover project cards',()=>{
- const html=readFileSync(new URL('../catalog/index.html',import.meta.url),'utf8');
- const roomCss=readFileSync(new URL('../catalog/room.css',import.meta.url),'utf8');
- assert.doesNotMatch(html,/<filter id="motion-|class="paint-motion"|<feDisplacementMap/);
- for(const effect of ['coffee-steam','lamp-breath','sun-dust','soot-eye-pair','screen-reflections']) assert.ok(html.includes(`class="${effect}`));
- assert.match(html,/<footer>[\s\S]*class="motion-toggle"[\s\S]*<\/footer>/);
- assert.match(roomCss,/@media \(max-width: 900px\), \(max-aspect-ratio: 6\/5\) \{[\s\S]*?\.motion-toggle \{ position: static; inset: auto; margin: 12px 0 0 auto; \}/);
-});

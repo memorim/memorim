@@ -52,13 +52,13 @@
 .room-paused .pause-icon { display: none; }
 .room-paused .play-icon { display: inline; }
 .room-paused .room-motion * { animation-play-state: paused !important; }
-.room-paused .coffee-steam, .room-paused .sun-dust, .room-paused .lamp-breath { visibility: hidden; }
+.room-paused .paint-motion, .room-paused .coffee-steam, .room-paused .sun-dust, .room-paused .lamp-breath { visibility: hidden; }
 .room-paused .cat-eyes { transition: none; }
 .page-hidden .room-motion * { animation-play-state: paused !important; }
 @media (max-width: 900px), (max-aspect-ratio: 6/5) {
   .scene-interaction { position: fixed; inset: 0 auto auto 50%; width: 1200px; height: 588px; transform: translateX(-50%); z-index: 0; }
   .scene-interaction .cat-hit { left: 22%; top: 0; width: 12.8%; height: 13.4%; }
-  .motion-toggle { position: static; inset: auto; margin: 12px 0 0 auto; }
+  .motion-toggle { left: auto; right: 10px; bottom: 10px; }
 }
 @media (max-width: 540px) {
   .scene-interaction { left: 0; transform: translateX(-285px); }
