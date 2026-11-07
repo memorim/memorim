@@ -40,11 +40,16 @@ h2, .project h2 { font: calc(15 * var(--u))/1.15 "Patrick Hand",cursive; padding
 footer { padding: calc(12 * var(--u)) 0; font-size: calc(13 * var(--u)); }
 .skip-link { z-index: 30; font-size: 16px; background: #fff8df; }
 @media (max-width: 900px), (max-aspect-ratio: 6/5) {
-  :root { --scene-width: 1200px; --u: 1px; }
+  :root { --scene-width: 1200px; --u: 1px; --mobile-header: 76px; }
   body { background: #302418; }
-  .studio { width: 100%; height: auto; min-height: 100svh; margin: 0; padding: 210px 14px 48px; }
-  .room { position: fixed; inset: 0 auto auto 50%; width: 1200px; height: 588px; transform: translateX(-50%); }
-  .room-art::after { content: ""; position: absolute; left: 30.8%; top: 9.55%; width: 49.3%; bottom: 0; background: #f8edcd; transform: skewY(-.85deg); transform-origin: top left; }
+  .studio { width: 100%; height: auto; min-height: 100svh; margin: 0; padding: var(--mobile-header) 14px 24px; }
+  .room { position: absolute; inset: 0 auto auto 0; width: 1200px; height: 588px; transform: translateX(-285px); }
+  /* Crop the decorative room above the live frame. The painted desktop
+     monitor must never remain visible behind a second mobile screen. */
+  .room { clip-path: polygon(0 0, 100% 0, 100% 5%, 35% 5%, 35% 9%, 32% 12%, 30% 12%, 30% 14%, 27% 14%, 27% 12%, 22% 12%, 22% 5%, 0 5%); }
+  .sketchbook { min-width: 0; }
+  .motion-toggle { position: relative; display: flex; width: fit-content; margin: 0 14px 16px auto; inset: auto; }
+  .motion-toggle[hidden] { display: none; }
   .sketchbook { position: relative; left: auto; top: auto; bottom: auto; width: 100%; transform: none; grid-template-columns: minmax(0,1fr); grid-template-rows: auto; border: 8px solid #332d2a; border-radius: 14px 14px 7px 7px; background: #fcf4d9; box-shadow: 0 0 0 2px #8e7254,0 16px 60px #0008; overflow: clip; }
   .topbar { height: auto; min-height: 48px; margin: 0 12px; gap: 14px; padding: 4px; font-size: 18px; }
   .contact { font-size: 16px; padding: 4px 7px; }
@@ -54,8 +59,8 @@ footer { padding: calc(12 * var(--u)) 0; font-size: calc(13 * var(--u)); }
   nav button { width: auto; min-height: 44px; padding: 8px 12px; font-size: 17px; }
   main { overflow: visible; background: none; padding: 0 14px 18px; }
   .intro { min-height: 75px; flex-wrap: wrap; gap: 0; padding-bottom: 12px; }
-  h1 { font-size: 38px; }
-  .heading-art { width: 54px; flex-basis: 54px; }
+  h1 { font-size: clamp(30px, 8.5vw, 38px); }
+  .heading-art { width: 42px; flex-basis: 42px; }
   .intro > p { font-size: 15px; }
   .projects { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
   .project { height: auto; padding: 10px 12px 4px; }
@@ -67,12 +72,11 @@ footer { padding: calc(12 * var(--u)) 0; font-size: calc(13 * var(--u)); }
   footer { font-size: 16px; padding-top: 16px; }
   .cat-hit { position: absolute; width: 160px; height: 90px; left: calc(50% - 340px); top: 0; }
   .soot-hit, .console-hit { display: none; }
-  .motion-toggle { left: auto; right: 10px; bottom: 10px; }
   .motion-label { max-width: 130px; }
 }
 @media (max-width: 540px) {
-  .studio { padding: 85px 10px 48px; }
-  .room { left: 0; transform: translateX(-285px); }
+  :root { --mobile-header: 76px; }
+  .studio { padding: var(--mobile-header) 10px 24px; }
   .cat-hit { left: 0; top: 0; width: 145px; height: 85px; }
   .sketchbook { border-width: 6px; }
   .topbar { gap: 12px; margin: 0 8px; font-size: 16px; }
