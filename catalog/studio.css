@@ -46,7 +46,7 @@ footer { padding: calc(12 * var(--u)) 0; font-size: calc(13 * var(--u)); }
   .room { position: absolute; inset: 0 auto auto 0; width: 1200px; height: 588px; transform: translateX(-285px); }
   /* Crop the decorative room above the live frame. The painted desktop
      monitor must never remain visible behind a second mobile screen. */
-  .room { clip-path: polygon(0 0, 100% 0, 100% 5%, 35% 5%, 35% 9%, 32% 12%, 30% 12%, 30% 14%, 27% 14%, 27% 12%, 22% 12%, 22% 5%, 0 5%); }
+  .room { clip-path: polygon(0 0, 100% 0, 100% 5%, 34.8% 5%, 34.3% 7.8%, 33.3% 9.2%, 31.8% 10.2%, 30% 10.7%, 28.8% 10.5%, 28.2% 12.9%, 27.1% 13.9%, 26.3% 13.4%, 26.1% 12.2%, 26.1% 9.9%, 25.1% 10%, 24.4% 10.2%, 23.8% 11.1%, 22% 10.5%, 22% 5%, 0 5%); }
   .sketchbook { min-width: 0; }
   .motion-toggle { position: relative; display: flex; width: fit-content; margin: 0 14px 16px auto; inset: auto; }
   .motion-toggle[hidden] { display: none; }
